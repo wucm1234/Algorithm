@@ -1,7 +1,7 @@
 ### Traverse vs Divide & Conquer
 
 > * They are both Recursion Algorithm
-> * Result in parameter vs Result in return value
+> * Result in `parameter` vs Result in `return value`
 > * Top down vs Bottom up
 
 ******
