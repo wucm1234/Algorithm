@@ -1,11 +1,11 @@
-###Traverse vs Divide & Conquer
+### Traverse vs Divide & Conquer
 
 > · <font color = 'red' >They are both Recursion Algorithm</font>
 > · Result in parameter vs Result in return value
 > · Top down vs Bottom up
 
 
-####代码
+#### 代码
 ```java
 	/*
 	    分别用traversal和分治法求二叉树的深度
