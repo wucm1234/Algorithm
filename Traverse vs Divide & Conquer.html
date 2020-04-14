@@ -1,0 +1,63 @@
+<!DOCTYPE html><html><head><title>Traverse vs Divide & Conquer</title><meta charset='utf-8'><link href='https://d31qtcb7c58z3n.cloudfront.net/res-min/themes/marxico.css' rel='stylesheet'><style></style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+
+
+<h3 id="traverse-vs-divide-conquer">Traverse vs Divide &amp; Conquer</h3>
+
+<blockquote>
+  <ul><li><p>They are both Recursion Algorithm</p></li>
+  <li><p>Result in parameter vs Result in return value</p></li>
+  <li><p>Top down vs Bottom up</p></li>
+  </ul>
+</blockquote>
+
+<hr>
+
+<p><font color="red">我是红色</font></p>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-diff hljs"><div class="hljs-line"><wbr>
+</div><div class="hljs-line"><span class="hljs-deletion">- red</span>
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line"><span class="hljs-addition">+ green</span>
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line"><span class="hljs-addition">! orange</span>
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line"># gray
+</div><div class="hljs-line"><wbr>
+</div></code></pre>
+
+<h4 id="代码">代码</h4>
+
+<pre class="prettyprint hljs-dark"><code class="language-java hljs"><div class="hljs-line">    <span class="hljs-comment">/*</span>
+</div><div class="hljs-line"><span class="hljs-comment">        分别用traversal和分治法求二叉树的深度</span>
+</div><div class="hljs-line"><span class="hljs-comment">    */</span>
+</div><div class="hljs-line">    <span class="hljs-comment">//traversal</span>
+</div><div class="hljs-line">    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+</div><div class="hljs-line">        <span class="hljs-keyword">int</span> max;
+</div><div class="hljs-line">        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">maxDepth</span><span class="hljs-params">(TreeNode root)</span> </span>{
+</div><div class="hljs-line">            max = <span class="hljs-number">0</span>;
+</div><div class="hljs-line">            traversal(root, <span class="hljs-number">0</span>);
+</div><div class="hljs-line">            <span class="hljs-keyword">return</span> max;
+</div><div class="hljs-line">        }
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line">        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">traversal</span><span class="hljs-params">(TreeNode node, <span class="hljs-keyword">int</span> curr)</span></span>{
+</div><div class="hljs-line">            <span class="hljs-keyword">if</span>(node == <span class="hljs-keyword">null</span>) <span class="hljs-keyword">return</span>;
+</div><div class="hljs-line">            max = Math.max(max, curr+<span class="hljs-number">1</span>);
+</div><div class="hljs-line">            traversal(node.left, curr+<span class="hljs-number">1</span>);
+</div><div class="hljs-line">            traversal(node.right, curr+<span class="hljs-number">1</span>);
+</div><div class="hljs-line">        }
+</div><div class="hljs-line">    }
+</div><div class="hljs-line">    <span class="hljs-comment">//divide &amp; conqure</span>
+</div><div class="hljs-line">    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+</div><div class="hljs-line">        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">maxDepth</span><span class="hljs-params">(TreeNode root)</span> </span>{
+</div><div class="hljs-line">            <span class="hljs-keyword">if</span>(root == <span class="hljs-keyword">null</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+</div><div class="hljs-line">            <span class="hljs-keyword">int</span> left = maxDepth(root.left);
+</div><div class="hljs-line">            <span class="hljs-keyword">int</span> right = maxDepth(root.right);
+</div><div class="hljs-line">            <span class="hljs-keyword">return</span> Math.max(left, right) + <span class="hljs-number">1</span>;
+</div><div class="hljs-line">        }
+</div><div class="hljs-line">    }
+</div></code></pre></div></body></html>
