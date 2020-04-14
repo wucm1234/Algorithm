@@ -7,6 +7,17 @@
 ******
 
 <font color=red>我是红色</font>
+```diff
+
+- red
+
++ green
+
+! orange
+
+# gray
+
+```
 #### 代码
 ```java
 	/*
