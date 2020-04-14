@@ -4,8 +4,6 @@
 > * Result in `parameter` vs Result in `return value`
 > * Top down vs Bottom up
 
-******
-
 
 
 #### 代码
