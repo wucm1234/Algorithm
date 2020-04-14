@@ -1,8 +1,10 @@
 ### Traverse vs Divide & Conquer
 
-> · <font color = 'red' >They are both Recursion Algorithm</font>
-> · Result in parameter vs Result in return value
-> · Top down vs Bottom up
+> * They are both Recursion Algorithm
+> * Result in parameter vs Result in return value
+> * Top down vs Bottom up
+
+***
 
 
 #### 代码
