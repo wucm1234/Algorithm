@@ -6,18 +6,8 @@
 
 ******
 
-<font color=red>我是红色</font>
-```diff
 
-- red
 
-+ green
-
-! orange ！dafsfa
-
-# gray
-
-```
 #### 代码
 ```java
 	/*
